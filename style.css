@@ -1,0 +1,447 @@
+html {
+    font-family: "TT Lakes Neue Trial", sans-serif;
+   }
+body{
+    margin: 0px;
+}
+header{
+    width: 100%;
+    height: 88px;
+    border-bottom: 1px solid #d9fff5;
+    min-width: 320px;
+}
+/*Класс шапки*/
+.inner{
+    width: 100%;
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF; 
+}
+/*Превый блок шапки*/
+.menu{
+    display: flex;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+.menu__burger{
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border:none;
+    background:none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.menu__logo{
+    width: 96.55px;
+    height: 50.81px;
+    margin-left: 16.73px;
+    margin-top: 18.59px;
+    margin-bottom: 18.59px;
+}
+.menu__divider2{
+    width: 2px;
+    height: 32px;
+    margin-left: 16.73px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+/*Второй блок шапки*/
+.actions{
+display: none;
+
+}
+.actions__divider{
+    width: 2px;
+    height: 32px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    order: 4;
+    margin-right: 0px;
+}
+.actions__chat{
+    width: 40px;
+    height: 40px;
+    border:none;
+    background:none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    order: 2;
+    margin-bottom: 24px;
+    margin-right: 16px;
+    margin-top: 24px;   
+}
+.actions__profile{
+    width: 40px;
+    height: 40px;
+    border:none;
+    background:none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    order: 3;
+    margin-bottom: 24px;
+    margin-right: 20px;
+    margin-top: 24px;
+}
+.actions__call{
+    width: 40px;
+    height: 40px;
+    border:none;
+    background:none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    order: 1;
+    margin-bottom: 24px;
+    margin-right: 16px;
+    margin-top: 24px;
+}
+/*Третий блок шапки*/
+.status{
+display: flex;
+margin: 0px;
+}
+.status__repair{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border:none;
+    background:none;
+    justify-content: center;
+    display: flex;
+    align-items: center; 
+    text-indent: -9999em;
+    text-transform: uppercase;
+}
+.status__chekstatus{
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: 16px;
+    border:none;
+    background:none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-indent: -9999em;
+    text-transform: uppercase;
+}
+/*Основной контент*/
+.basic-content{
+    width: 100%px;
+    height: 509px;
+    background-color: #F8F8F8;
+    min-width: 320px;
+}
+.first-h{
+    width: 304px;
+    height: 40px;
+    padding-top: 24px;
+}
+.h{
+    width: 304px;
+    height: 40px;
+    margin-top: 0px;
+    display: flex;
+}
+.g{
+    display: none;
+}
+.h__img{ 
+    width: 4px;
+    height: 40px;
+    margin-right: 12px;   
+}
+.reviews{
+    display: none;
+}
+/*Скролл лента*/
+.tools{
+    display: flex;
+    margin-top: 24px;
+    margin-left: 16px;
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.scroll{
+    display: flex;
+    width: 1063px;
+    height: 40px;
+} 
+nav>button.scroll__brand{
+    width: 246px;
+    height: 40px;
+    background: none;
+    border: none;
+    font-size: 16px;
+}
+nav>button.scroll__dop{
+    width: 258px;
+    height: 40px;
+    background: none;
+    border: none;
+    font-size: 16px;
+}
+nav>button.scroll__price{
+        width: 258px;
+        height: 40px;
+        background: none;
+        border: none;
+        font-size: 16px;        
+}
+nav>button.scroll__adres{
+    width: 270px;
+    height: 40px;
+    background: none;
+    border: none;
+    font-size: 16px;
+}
+nav>button.scroll__hot{
+    width: 258px;
+    height: 40px;
+    background: none;
+    border: none;
+    font-size: 16px;
+}
+nav>button:hover{
+    border: 2px solid #b8ffec; 
+    border-radius: 6px; 
+    background: #fff;
+}
+.info{
+    width: 100%;
+    height: 322px;
+    margin: 0px;
+    margin-top: 24px;
+}
+.service__one{
+width: 288px;
+height: 90px;
+font-size: 14px;
+margin-top: 0px;
+margin-left: 16px;
+}
+.service__two{
+    display: none;
+}
+.service__three{
+    display: none;
+}
+.still__reference1{
+    width: 24px;
+    height: 24px;
+    margin-top: -3px;
+    margin-right: 8px;
+}
+.still__reference{
+width: 136px;
+height: 24px;
+display: flex;
+margin-top: 16px;
+margin-left: 16px;
+font-weight: 500;
+color: #1b1c21;
+font-size: 16px;
+text-decoration: none;
+}
+.picture__company{
+    width: 320px;
+    height: 176px;
+    margin-top: 16px;
+}
+@media (min-width:500px){
+    header{
+        width: 100%;
+        height: 88px;
+    }
+    .actions{
+        display: flex;
+        margin-right: 0px;
+        justify-content: end;
+        width: 448px;
+    }
+    .menu__burger{
+        order: 1;
+        margin-left: 24px;
+    }
+    .menu__logo{
+        order: 2;
+    }
+    .menu__divider2{
+        order: 3;
+    }
+    nav>button.scroll__brand{
+     order: 1;  
+    }
+    nav>button.scroll__dop{
+       order: 2;
+    }
+    nav>button.scroll__price{
+        order: 3;           
+    }
+    nav>button.scroll__adres{
+       order: 5;
+    }
+    nav>button.scroll__hot{
+    order: 4;
+    }
+    .info{
+        width: 720px;
+        height: 208px;
+        display: grid;
+        grid-template-columns: 360px 360px;
+        grid-template-rows: 210px 210px;
+    }
+    .service__two{
+        display: flex;
+        margin-top: 16px;
+        margin-left: 16px;
+    }
+    .service{
+        width: 312px;
+        height: 160px;
+        font-size: 14px;
+    }
+    .picture__company{
+        width: 360px;
+        height: 208px;
+        margin-top: 0px;
+    }
+}
+@media (min-width:769px){
+    .header{
+    display: none;
+    }
+    .body{
+        width: 1120px;
+        height: 535px;
+    }
+    .basic-content{
+        width: 1120px;
+    }
+    .first-h{
+        width: 1096px;
+        display: grid;
+        grid-template-columns: 548px 548px;
+        padding-top: 42px;
+    }
+    .tools{
+        width: 1063px;
+        height: 40px;
+        margin-top: 8px;
+        margin-left: 32px;
+    }
+    .reviews{
+        display: flex;
+    }
+    .reviews__reference{
+        width: 71px;
+        height: 24px;
+        color: #7e7e82;
+        font-size: 16px;
+        text-decoration: none;
+        margin-top: 14.63px;
+        margin-left: 56px;
+    }
+    .g{
+        display: flex;
+        justify-content: end;
+    }
+    .g__text1{
+        width:125px;
+        height: 24px;
+        margin-right: 8px;
+        margin-top: 10px;
+    }
+    .g__repair{
+        width: 40px;
+        height: 40px;
+        border:none;
+        background:none;
+        justify-content: center;
+        display: flex;
+        margin-right: 32px;
+    }
+    .g__text2{
+        width:119px;
+        height:24px;
+        margin-right:8px;
+        margin-top:10px;
+    }
+    .g__chekstatus{
+        width: 40px;
+        height: 40px;
+        border:none;
+        background:none;
+        justify-content: center;
+        display: flex;
+        margin-right: 2px;
+    }
+    .scroll__brand{
+        width: 233px;
+        height: 40px;
+    }
+    .scroll__dop{
+        width: 254px;
+        height: 40px;
+    }
+    .scroll__price{
+        width: 142px;
+        height: 48px;
+    }
+    .scroll__adres{
+        width: 233px;
+        height: 40px;
+    }
+    .scroll__hot{
+        width: 191px;
+        height: 36px;
+    }
+    .info{
+        width: 1120px;
+        height: 310px;
+        display: grid;
+        grid-template-columns: 588px 532px;
+        margin-top: 19.22px;
+    }
+    .service{
+        width: 490px;
+        height: 160px;
+        margin-left: 34px;
+        margin-right: 34px;
+
+    }
+    .service__one{
+        width: 490px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+
+    }
+    .service__two{
+        display: none;
+
+    }
+    .service__three{
+        display: inline;
+        width: 490px;
+        font-size: 14px;
+    }
+    .picture__company{
+        width: 531.35px;
+        height: 307px;
+        margin-left: 0px;
+    }
+}
