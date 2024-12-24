@@ -1,243 +1,250 @@
 html {
     font-family: "TT Lakes Neue Trial", sans-serif;
    }
-body{
+   /* Версия 320 */
+.body{
     margin: 0px;
+    padding: 0px;
 }
-header{
-    width: 100%;
-    height: 88px;
+.header{
     border-bottom: 1px solid #d9fff5;
-    min-width: 320px;
+    margin: 0px;
+    padding: 0px; 
 }
 /*Класс шапки*/
-.inner{
-    width: 100%;
+.header__inner{
+    width: 100vw;
     height: 88px;
     display: flex;
     justify-content: space-between;
     background-color: #FFFFFF; 
 }
 /*Превый блок шапки*/
-.menu{
+.header__menu{
     display: flex;
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
 }
-.menu__burger{
+.header__burger{
     width: 40px;
     height: 40px;
     margin-left: 16px;
     margin-top: 24px;
     margin-bottom: 24px;
-    border:none;
-    background:none;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+    background-image: url("img/burger1.svg");
+    background-position: center;
+    border-radius: 50%;
+    border: none; 
 }
-.menu__logo{
+.header__divider-one{
+    width: 2px;
+    height: 32px;
+    background-color: #eaeaea;
+    margin-top: 28px;
+    margin-left: 16.73px;
+    border-radius: 10%;
+    display: none;
+}
+.header__logo{
     width: 96.55px;
     height: 50.81px;
     margin-left: 16.73px;
     margin-top: 18.59px;
     margin-bottom: 18.59px;
 }
-.menu__divider2{
-    width: 2px;
-    height: 32px;
-    margin-left: 16.73px;
-    margin-top: 28px;
-    margin-bottom: 28px;
-}
 /*Второй блок шапки*/
-.actions{
+.header__actions{
 display: none;
+}
 
-}
-.actions__divider{
-    width: 2px;
-    height: 32px;
-    margin-top: 28px;
-    margin-bottom: 28px;
-    order: 4;
-    margin-right: 0px;
-}
-.actions__chat{
+.header__chat{
     width: 40px;
     height: 40px;
-    border:none;
-    background:none;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+    background-image: url("img/chat1.svg");
+    background-position: center;
+    border-radius: 50%;
+    border: none;
     order: 2;
     margin-bottom: 24px;
     margin-right: 16px;
-    margin-top: 24px;   
+    margin-top: 24px;  
 }
-.actions__profile{
+.header__profile{
     width: 40px;
     height: 40px;
-    border:none;
-    background:none;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+    background-image: url("img/profile1.svg");
+    background-position: center;
+    border-radius: 50%;
+    border: none;
     order: 3;
     margin-bottom: 24px;
     margin-right: 20px;
     margin-top: 24px;
 }
-.actions__call{
+.header__call{
     width: 40px;
     height: 40px;
-    border:none;
-    background:none;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+    background-image: url("img/call1.svg");
+    background-position: center;
+    border-radius: 50%;
+    border: none;
     order: 1;
     margin-bottom: 24px;
     margin-right: 16px;
     margin-top: 24px;
 }
 /*Третий блок шапки*/
-.status{
+.header__status{
 display: flex;
 margin: 0px;
 }
-.status__repair{
+.header__divider-two{
+    width: 2px;
+    height: 32px;
+    background-color: #eaeaea;
+    margin-top: 28px;
+    margin-left: 16.73px;
+    border-radius: 10%;
+}
+.header__repair{
     width: 40px;
     height: 40px;
     margin-left: 20px;
     margin-top: 24px;
     margin-bottom: 24px;
-    border:none;
-    background:none;
-    justify-content: center;
-    display: flex;
-    align-items: center; 
-    text-indent: -9999em;
-    text-transform: uppercase;
+    background-image: url("img/repair1.svg");
+    background-position: center;
+    border-radius: 50%;
+    border: none;
 }
-.status__chekstatus{
+.header__chekstatus{
     width: 40px;
     height: 40px;
     margin-left: 16px;
     margin-top: 24px;
     margin-bottom: 24px;
     margin-right: 16px;
-    border:none;
-    background:none;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    text-indent: -9999em;
-    text-transform: uppercase;
+    background-image: url("img/checkstatus1.svg");
+    background-position: center;
+    border-radius: 50%;
+    border: none;
 }
 /*Основной контент*/
 .basic-content{
-    width: 100%px;
+    width: 100vw;
     height: 509px;
     background-color: #F8F8F8;
     min-width: 320px;
 }
-.first-h{
+.paragraph{
     width: 304px;
     height: 40px;
-    padding-top: 24px;
+
 }
-.h{
+.paragraph__first{
     width: 304px;
     height: 40px;
-    margin-top: 0px;
     display: flex;
+    background-color: #F8F8F8;
+    margin: 0px;
+    padding-top: 24px;
+
 }
-.g{
+.full-screen{
     display: none;
 }
-.h__img{ 
+.paragraph__dekore{ 
     width: 4px;
     height: 40px;
-    margin-right: 12px;   
-}
-.reviews{
-    display: none;
+    margin-right: 12px;
+    background-color: #41f6d7;
+    border-top-right-radius: 50px; 
+    border-bottom-right-radius: 50px;  
 }
 /*Скролл лента*/
-.tools{
+.scroll{
+    height: 40px;
+}
+.scroll__ribbon{
     display: flex;
-    margin-top: 24px;
-    margin-left: 16px;
-    width: 100%;
     overflow-x: auto;
     scrollbar-width: none;
+    margin-left: 16px;
 }
-.scroll{
+.scroll__tools{
     display: flex;
-    width: 1063px;
+    width: 1500px;
     height: 40px;
+    padding-top: 24px;
+    
 } 
-nav>button.scroll__brand{
+.scroll__brand{
     width: 246px;
     height: 40px;
     background: none;
     border: none;
     font-size: 16px;
 }
-nav>button.scroll__dop{
+.scroll__dop{
     width: 258px;
     height: 40px;
     background: none;
     border: none;
     font-size: 16px;
+    padding-left: 16.54px;
 }
-nav>button.scroll__price{
+.scroll__price{
         width: 258px;
         height: 40px;
         background: none;
         border: none;
         font-size: 16px;        
 }
-nav>button.scroll__adres{
+.scroll__adres{
     width: 270px;
     height: 40px;
     background: none;
     border: none;
     font-size: 16px;
 }
-nav>button.scroll__hot{
+.scroll__hot{
     width: 258px;
     height: 40px;
     background: none;
     border: none;
     font-size: 16px;
 }
-nav>button:hover{
+.scroll__reviews{
+    width: 258px;
+    height: 40px;
+    background: none;
+    border: none;
+    font-size: 16px;
+}
+.backlight:hover{
     border: 2px solid #b8ffec; 
     border-radius: 6px; 
     background: #fff;
 }
 .info{
-    width: 100%;
+    width: 100vw;
     height: 322px;
     margin: 0px;
     margin-top: 24px;
 }
-.service__one{
+.info__one{
 width: 288px;
 height: 90px;
 font-size: 14px;
 margin-top: 0px;
 margin-left: 16px;
 }
-.service__two{
+.info__two{
     display: none;
 }
-.service__three{
+.info__three{
     display: none;
 }
 .still__reference1{
@@ -263,40 +270,43 @@ text-decoration: none;
     margin-top: 16px;
 }
 @media (min-width:500px){
-    header{
-        width: 100%;
+    .header{
+        width: 100vw;
         height: 88px;
     }
-    .actions{
+    .header__actions{
         display: flex;
         margin-right: 0px;
         justify-content: end;
         width: 448px;
     }
-    .menu__burger{
+    .header__burger{
         order: 1;
         margin-left: 24px;
     }
-    .menu__logo{
+    .header__logo{
         order: 2;
     }
-    .menu__divider2{
+    .header__divider-one{
         order: 3;
     }
-    nav>button.scroll__brand{
-     order: 1;  
+    .scroll__brand{
+        order: 1;  
     }
-    nav>button.scroll__dop{
-       order: 2;
+    .scroll__dop{
+        order: 2;
     }
-    nav>button.scroll__price{
+    .scroll__price{
         order: 3;           
     }
-    nav>button.scroll__adres{
-       order: 5;
+    .scroll__adres{
+        order: 5;
     }
-    nav>button.scroll__hot{
-    order: 4;
+    .scroll__hot{
+        order: 4;
+    }
+    .scroll__reviews{
+        order: 6;
     }
     .info{
         width: 720px;
@@ -305,7 +315,7 @@ text-decoration: none;
         grid-template-columns: 360px 360px;
         grid-template-rows: 210px 210px;
     }
-    .service__two{
+    .info__two{
         display: flex;
         margin-top: 16px;
         margin-left: 16px;
@@ -346,15 +356,6 @@ text-decoration: none;
     }
     .reviews{
         display: flex;
-    }
-    .reviews__reference{
-        width: 71px;
-        height: 24px;
-        color: #7e7e82;
-        font-size: 16px;
-        text-decoration: none;
-        margin-top: 14.63px;
-        margin-left: 56px;
     }
     .g{
         display: flex;
@@ -438,10 +439,5 @@ text-decoration: none;
         display: inline;
         width: 490px;
         font-size: 14px;
-    }
-    .picture__company{
-        width: 531.35px;
-        height: 307px;
-        margin-left: 0px;
     }
 }
