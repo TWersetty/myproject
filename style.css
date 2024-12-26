@@ -44,7 +44,10 @@ html {
     background-color: #eaeaea;
     margin-top: 28px;
     margin-left: 16.73px;
-    border-radius: 10%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     display: none;
 }
 .header__logo{
@@ -106,7 +109,10 @@ margin: 0px;
     background-color: #eaeaea;
     margin-top: 28px;
     margin-left: 16.73px;
-    border-radius: 10%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 .header__repair{
     width: 40px;
@@ -138,24 +144,33 @@ margin: 0px;
     background-color: #F8F8F8;
     min-width: 320px;
 }
-.paragraph{
+.basic-content__paragraph{
     width: 304px;
     height: 40px;
+    margin-top: 0px;
+    padding-top: 24px;
 
 }
-.paragraph__first{
+.basic-content__first{
     width: 304px;
     height: 40px;
     display: flex;
     background-color: #F8F8F8;
     margin: 0px;
-    padding-top: 24px;
-
 }
-.full-screen{
+.basic-content__first::before{
+    content: "";
+    width: 4px;
+    height: 40px;
+    margin-right: 12px;
+    background-color: #41f6d7;
+    border-top-right-radius: 50px; 
+    border-bottom-right-radius: 50px; 
+}
+.basic-content__full-screen{
     display: none;
 }
-.paragraph__dekore{ 
+.basic-content__dekore{ 
     width: 4px;
     height: 40px;
     margin-right: 12px;
@@ -164,60 +179,59 @@ margin: 0px;
     border-bottom-right-radius: 50px;  
 }
 /*Скролл лента*/
-.scroll{
+.basic-content__scroll{
     height: 40px;
+    margin-top: 24px;
+    margin-left: 16px;
 }
-.scroll__ribbon{
+.basic-content__ribbon{
     display: flex;
     overflow-x: auto;
     scrollbar-width: none;
-    margin-left: 16px;
 }
-.scroll__tools{
+.basic-content__tools{
     display: flex;
     width: 1500px;
-    height: 40px;
-    padding-top: 24px;
-    
+    height: 40px;   
 } 
-.scroll__brand{
-    width: 246px;
+.basic-content__brand{
+    width: 233px;
+    height: 40px;
+    background: none;
+    border: none;
+    font-size: 16px;
+   
+}
+.basic-content__dop{
+    width: 211px;
     height: 40px;
     background: none;
     border: none;
     font-size: 16px;
 }
-.scroll__dop{
-    width: 258px;
-    height: 40px;
-    background: none;
-    border: none;
-    font-size: 16px;
-    padding-left: 16.54px;
-}
-.scroll__price{
-        width: 258px;
+.basic-content__price{
+        width: 152px;
         height: 40px;
         background: none;
         border: none;
         font-size: 16px;        
 }
-.scroll__adres{
+.basic-content__adres{
     width: 270px;
     height: 40px;
     background: none;
     border: none;
     font-size: 16px;
 }
-.scroll__hot{
-    width: 258px;
+.basic-content__hot{
+    width: 191px;
     height: 40px;
     background: none;
     border: none;
     font-size: 16px;
 }
-.scroll__reviews{
-    width: 258px;
+.basic-content__reviews{
+    width: 95px;
     height: 40px;
     background: none;
     border: none;
@@ -228,32 +242,33 @@ margin: 0px;
     border-radius: 6px; 
     background: #fff;
 }
-.info{
+.basic-content__info{
     width: 100vw;
     height: 322px;
     margin: 0px;
     margin-top: 24px;
 }
-.info__one{
+.basic-content__mobile{
 width: 288px;
 height: 90px;
 font-size: 14px;
 margin-top: 0px;
 margin-left: 16px;
 }
-.info__two{
+.basic-content__tablet{
     display: none;
 }
-.info__three{
+.basic-content__laptop{
     display: none;
 }
-.still__reference1{
+.basic-content__reference::before{
+    content: url("img/expand.svg");
     width: 24px;
     height: 24px;
     margin-top: -3px;
     margin-right: 8px;
 }
-.still__reference{
+.basic-content__reference{
 width: 136px;
 height: 24px;
 display: flex;
@@ -264,12 +279,13 @@ color: #1b1c21;
 font-size: 16px;
 text-decoration: none;
 }
-.picture__company{
+.basic-content__company{
     width: 320px;
     height: 176px;
     margin-top: 16px;
 }
-@media (min-width:500px){
+/* версия для планшета */
+@media (min-width:767px){
     .header{
         width: 100vw;
         height: 88px;
@@ -288,156 +304,193 @@ text-decoration: none;
         order: 2;
     }
     .header__divider-one{
-        order: 3;
-    }
-    .scroll__brand{
-        order: 1;  
-    }
-    .scroll__dop{
+        display: flex;
         order: 2;
     }
-    .scroll__price{
+    .basic-content__brand{
+        order: 1;  
+    }
+    .basic-content__dop{
+        order: 2;
+    }
+    .basic-content__price{
         order: 3;           
     }
-    .scroll__adres{
+    .basic-content__adres{
         order: 5;
     }
-    .scroll__hot{
+    .basic-content__hot{
         order: 4;
     }
-    .scroll__reviews{
+    .basic-content__reviews{
         order: 6;
     }
-    .info{
+    .basic-content__info{
         width: 720px;
         height: 208px;
         display: grid;
         grid-template-columns: 360px 360px;
         grid-template-rows: 210px 210px;
     }
-    .info__two{
+    .basic-content__tablet{
         display: flex;
         margin-top: 16px;
         margin-left: 16px;
     }
-    .service{
+    .basic-content__picture{
         width: 312px;
         height: 160px;
         font-size: 14px;
     }
-    .picture__company{
+    .basic-content__company{
         width: 360px;
         height: 208px;
         margin-top: 0px;
     }
 }
-@media (min-width:769px){
+@media (min-width:1119px){
     .header{
     display: none;
     }
     .body{
         width: 1120px;
         height: 535px;
+        
     }
     .basic-content{
         width: 1120px;
+        height: 535px;
     }
-    .first-h{
+    .basic-content__paragraph{
         width: 1096px;
         display: grid;
-        grid-template-columns: 548px 548px;
+        grid-template-columns: 50% 50%;
         padding-top: 42px;
     }
-    .tools{
-        width: 1063px;
+    .basic-content__first::before{
+        content: "";
+        width: 4px;
         height: 40px;
-        margin-top: 8px;
-        margin-left: 32px;
+        margin-right: 12px;
+        background-color: #41f6d7;
+        border-top-right-radius: 50px; 
+        border-bottom-right-radius: 50px;
+        margin-right: 32px;      
     }
-    .reviews{
-        display: flex;
-    }
-    .g{
+    .basic-content__full-screen{
         display: flex;
         justify-content: end;
     }
-    .g__text1{
-        width:125px;
-        height: 24px;
+    .basic-content__text-one{
+        margin-top: 8px;
         margin-right: 8px;
-        margin-top: 10px;
+        font-weight: 500;
+        color: #1b1c21;
     }
-    .g__repair{
+    .basic-content__repair{
         width: 40px;
         height: 40px;
-        border:none;
-        background:none;
-        justify-content: center;
-        display: flex;
+        background-image: url("img/repair1.svg");
+        background-position: center;
+        border-radius: 50%;
+        border: none;
+        margin-top: 0px;
         margin-right: 32px;
     }
-    .g__text2{
-        width:119px;
-        height:24px;
-        margin-right:8px;
-        margin-top:10px;
+    .basic-content__text-two{
+        margin-top: 8px;
+        margin-right: 9px;
+        font-weight: 500;
+        color: #1b1c21;
     }
-    .g__chekstatus{
+    .basic-content__chekstatus{
         width: 40px;
         height: 40px;
-        border:none;
-        background:none;
-        justify-content: center;
-        display: flex;
-        margin-right: 2px;
+        background-image: url("img/checkstatus1.svg");
+        background-position: center;
+        border-radius: 50%;
+        border: none;
+        margin-top: 0px;
+        margin-right: 5px;
     }
-    .scroll__brand{
+    .basic-content__scroll{
+        width: 1100px;
+        height: 82px;
+        margin-top: 8px;
+        margin-left: 0px;
+    }
+    .basic-content__ribbon{
+        width: 1100px;
+        height: 82px;
+      
+    }
+    .basic-content__tools{
+        max-width: 1100px;
+        height: 82px;
+        display: flex;   
+    }
+    .basic-content__brand{
         width: 233px;
         height: 40px;
+        margin-left: -96px;
     }
-    .scroll__dop{
+    .basic-content__dop{
         width: 254px;
         height: 40px;
     }
-    .scroll__price{
-        width: 142px;
-        height: 48px;
+    .basic-content__price{
+        width: 160px;
+        height: 40px;
     }
-    .scroll__adres{
+    .basic-content__adres{
         width: 233px;
         height: 40px;
     }
-    .scroll__hot{
+    .basic-content__hot{
         width: 191px;
-        height: 36px;
+        height: 40px;
     }
-    .info{
+    .basic-content__reviews{
+        margin-top: 40px;
+        order: -1;
+        margin-left: 35px;
+    }
+    .basic-content__info{
         width: 1120px;
         height: 310px;
         display: grid;
         grid-template-columns: 588px 532px;
         margin-top: 19.22px;
     }
-    .service{
+    .basic-content__service{
         width: 490px;
         height: 160px;
-        margin-left: 34px;
-        margin-right: 34px;
+        margin-left: 32px;
+        margin-right: 46px;
 
     }
-    .service__one{
+    .basic-content__mobile{
         width: 490px;
+        height: 75px;
         margin-left: 0px;
         margin-bottom: 0px;
 
     }
-    .service__two{
+    .basic-content__tablet{
         display: none;
 
     }
-    .service__three{
-        display: inline;
+    .basic-content__laptop{
+        display: flex;
         width: 490px;
         font-size: 14px;
+    }
+    .basic-content__picture{
+        width: 532px;
+        height: 307px;
+    }
+    .basic-content__company{
+        width: 532px;
+        height: 307px;
     }
 }
