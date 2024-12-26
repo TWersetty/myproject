@@ -494,3 +494,7 @@ text-decoration: none;
         height: 307px;
     }
 }
+.body{
+    margin-left: auto;
+    margin-right: auto;
+}
